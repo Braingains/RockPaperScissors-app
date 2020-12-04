@@ -1,9 +1,26 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Upcoming Events!</h1>
-
-    <form class="form-inline" action="/add-event" method="post">
+    <h1>Rock Paper Scissors Game</h1>
+    <form action="/testestestest">
+        <label for="player_1_choice">Player 1 choice:</label>
+        <select id="testid" name="testname">
+          <option value="rock">Rock</option>
+          <option value="paper">Paper</option>
+          <option value="scissors">Scissors</option>
+        </select>
+        <input type="submit">
+      </form>
+      <form action="testestestest">
+        <label for="player_2_choice">Player 2 choice:</label>
+        <select id="testid" name="testname">
+          <option value="rock">Rock</option>
+          <option value="paper">Paper</option>
+          <option value="scissors">Scissors</option>
+        </select>
+        <input type="submit">
+      </form>
+    <!-- <form class="form-inline" action="/add-event" method="post">
       <label for="name">Name</label>
       <input type="text" name="name" id="name">
       <label for="date">Date</label>
@@ -17,7 +34,7 @@
       <label for="description">Description</label>
       <textarea name="description" rows="2" cols="30"></textarea>
       <input type="submit" value="Add event">
-    </form> <!-- ADDED -->
+    </form>
     <div class="event-container">
     {% for event in events %}
     <div class="event">
@@ -34,7 +51,7 @@
           <form class="form-inline" action="/delete/{{ event.name }}" method="POST">
             <input type="submit" value="Delete">
           </form>
-    </div>
+     </div>
     {% endfor %}
-    </div>
+    </div> -->
 {% endblock %}
