@@ -2,6 +2,11 @@
 
 {% block content %}
     <h1>Rock Paper Scissors Game</h1>
+  <body>
+    <form>
+      <label for="player_1_name">Player 1 name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+    </form>
     <form action="/player_1_choice">
         <label for="player_1_choice">Player 1 choice:</label>
         <select id="testid" name="/">
@@ -10,6 +15,13 @@
           <option value="scissors">Scissors</option>
         </select>
       </form>
+  </body>
+
+  <body>
+    <form>
+      <label for="player_2_name">Player 2 name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+    </form>
       <form action="player_2_choice">
         <label for="player_2_choice">Player 2 choice:</label>
         <select id="testid" name="/">
@@ -17,6 +29,8 @@
           <option value="paper">Paper</option>
           <option value="scissors">Scissors</option>
         </select>
-        <input type="submit">
       </form>
+    </body>
+
+    <input type="submit">
 {% endblock %}
