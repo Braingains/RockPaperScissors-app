@@ -1,10 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Rock Paper Scissors Game Rules</h1>
-    <p>
-        Paper beats Rock, Rock beats Scissors, Scissors beats Paper.
-    </p>
-    
-      </form>
+<p>Player 1's choice is: {{ player_1_choice }}</p>
+<p>Player 2's choice is: {{ player_2_choice }}</p>
+
+{% if winner == 'Tie' %}
+
+<h1> Tie! Play again!</h1>
+
+{% else %}
+
+<h1> {{ winner }} Wins! </h1>
+{% endif %}
 {% endblock %}

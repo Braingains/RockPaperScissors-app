@@ -6,25 +6,19 @@ class Game():
 
 
 def play_game(player_1_choice, player_2_choice):
-    if player_1_choice == "rock" and player_2_choice == "scissors":
-        return 'Rock beats Scissors, player 1 wins!'
-        
-    elif player_1_choice == "paper" and player_2_choice == "rock":
-        return 'Paper beats Rock, player 1 wins!'
-        
-    elif player_1_choice == "scissors" and player_2_choice == "paper":
-        return 'Scissors beats Paper, player 1 wins!'
-
-    elif player_2_choice == "rock" and player_1_choice == "scissors":
-        return 'Rock beats Scissors, player 2 wins'
-        
-    elif player_2_choice == "paper" and player_1_choice == "rock":
-        return 'Paper beats Rock, player 2 wins'
-        
-    elif player_2_choice == "scissors" and player_1_choice == "paper":
-        return 'Scissors beats Paper, player 2 wins'   
     
-    elif player_1_choice == player_2_choice:
-        return 'Draw game, try again!'
+    winner = "Player_2"
 
-    else: return 'invalid input, input must be rock paper or scissors in lower-case'
+    if player_1_choice == "rock" and player_2_choice == "scissors":
+        winner = "Player_1"
+    if player_1_choice == "scissors" and player_2_choice == "paper":
+        winner = "Player_1"
+    if player_1_choice == "paper" and player_2_choice == "rock":
+        winner = "Player_1"
+    if player_1_choice == player_2_choice:
+        winner = "Tie"
+    
+
+    return winner
+
+    #else: return 'invalid input'
