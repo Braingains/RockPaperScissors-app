@@ -17,3 +17,12 @@ def play(player_1_choice, player_2_choice):
     winner = play_game(player_1_choice, player_2_choice)
     return render_template('play.html', title='Play', player_1_choice = player_1_choice, player_2_choice = player_2_choice, winner = winner) 
     
+
+
+
+# @app.route('/cpu', methods=['POST'])
+# def vs_cpu(player_1_choice):
+#     player_choice = player_1_choice
+#     cpu_choice = cpu_choice()
+#     winner = play_cpu(player_1_choice, computer_choice)
+#     return render_template('play.html', title='Play', player_1_choice = player_1_choice, winner = winner)

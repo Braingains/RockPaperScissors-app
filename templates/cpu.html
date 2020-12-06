@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>Player 1's choice is: {{ player_1_choice }}</p>
+<p>Cpu's choice is: {{ computer_choice }}</p>
+
+{% if winner == 'Tie' %}
+
+<h1> Tie! Play again!</h1>
+
+{% else %}
+
+<h1> {{ winner }} Wins! </h1>
+{% endif %}
+{% endblock %}

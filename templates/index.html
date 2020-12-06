@@ -2,7 +2,10 @@
 
 {% block content %}
     <h1>Rock Paper Scissors Game</h1>
+    <p>Play by adding /play/ then player 1's choice and player 2's choice to the url bar. For example: http://localhost:5000/rock/paper</p>
+    <p>Ignore the menus below, I can't get them to work :'(</p>
   <body>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <form>
       <label for="player_1_name">Player 1 name:</label><br>
   <input type="text" id="fname" name="fname" value=""><br>
