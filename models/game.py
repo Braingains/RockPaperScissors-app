@@ -6,6 +6,8 @@ class Game():
         self.player_2 = player_2
 
 
+#these function should be returning the winning player object, rather than just a string
+
 def play_game(player_1_choice, player_2_choice):
     
     winner = "Player_2"

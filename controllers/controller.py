@@ -12,6 +12,7 @@ def index():
 def rules():
     return render_template('rules.html', title='Rules')
 
+#this was supposed to work on the ('/') route, the ('/play') route was supposed to be for playing the cpu
 @app.route('/play/<player_1_choice>/<player_2_choice>', methods=['GET', 'POST'])
 def play(player_1_choice, player_2_choice):
     winner = play_game(player_1_choice, player_2_choice)

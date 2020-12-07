@@ -3,6 +3,10 @@ import unittest
 from models.game import Game, play_game
 from models.player import *
 
+#I'm actually testing both the player and the game here, rather than seperating them
+
+#I really should have written tests for every possible combination
+
 class TestGame(unittest.TestCase):
 
     def setUp(self):
@@ -25,6 +29,7 @@ class TestGame(unittest.TestCase):
     def test_paper_beats_rock(self):
         self.assertEqual(play_game(self.Rocky.choice, self.Pepe.choice), 'Player_2')
 
+    #draw should have returned 'None'
     def test_draw(self):
         self.assertEqual(play_game(self.Rocky.choice, self.Rocky.choice), 'Tie')
 
